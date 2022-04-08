@@ -1,14 +1,14 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 
-const HomePage: NextPage = () => {
+const ProductPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Renner App</title>
+        <title>Renner App - Product</title>
       </Head>
     </>
   )
 }
 
-export default HomePage
+export default ProductPage

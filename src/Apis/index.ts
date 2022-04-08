@@ -1,1 +1,3 @@
-export {}
+import { ProductsAPI } from './Products'
+
+export { ProductsAPI }
