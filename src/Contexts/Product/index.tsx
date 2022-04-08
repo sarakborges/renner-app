@@ -1,5 +1,6 @@
-import { ProductProps } from 'Helpers'
 import React, { Dispatch, createContext, useState, FC } from 'react'
+
+import { ProductProps } from 'Helpers'
 
 export const ProductContext = createContext<{
   product: ProductProps | null
@@ -9,7 +10,7 @@ export const ProductContext = createContext<{
   setProduct: null,
 })
 
-const ProductProvider: FC<{
+export const ProductProvider: FC<{
   children: FC
 }> = ({ children }) => {
   const [product, setProduct] = useState<ProductProps | null>(null)
@@ -20,5 +21,3 @@ const ProductProvider: FC<{
     </ProductContext.Provider>
   )
 }
-
-export default ProductProvider
