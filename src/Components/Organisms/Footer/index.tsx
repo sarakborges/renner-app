@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { FC } from 'react'
 
-export const Footer: React.FC = () => {
+export const Footer: FC = () => {
   return (
     <>
       <></>

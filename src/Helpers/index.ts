@@ -1,1 +1,3 @@
-export {}
+import { ProductProps } from './Types/Product'
+
+export { ProductProps }
