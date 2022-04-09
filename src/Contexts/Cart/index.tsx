@@ -1,4 +1,4 @@
-import React, { Dispatch, createContext, useState, FC } from 'react'
+import React, { Dispatch, createContext, useState, FC, ReactNode } from 'react'
 
 import { CartProps } from 'Helpers'
 
@@ -11,7 +11,7 @@ export const CartsContext = createContext<{
 })
 
 export const CartsProvider: FC<{
-  children: FC
+  children: ReactNode
 }> = ({ children }) => {
   const [cart, setCart] = useState<CartProps | null>(null)
 

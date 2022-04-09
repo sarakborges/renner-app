@@ -6,11 +6,15 @@ export const GlobalStyle = createGlobalStyle`
 
   :root {
     --lightGray: #EEEEEE;
+    --black: #111111;
+    --white: #FFFFFF;
 
     --red: #EE2430;
   }
 
   body {
+    font-family: "Roboto", sans-serif;
+
     background-color: var(--lightGray);
 
     * {
