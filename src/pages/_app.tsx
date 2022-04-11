@@ -2,11 +2,13 @@ import React from 'react'
 import Head from 'next/head'
 import type { AppProps } from 'next/app'
 
+import { ProductsProvider } from 'Contexts'
+
 import { GlobalStyle } from 'Styles/global'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <ProductsProvider>
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,7 +20,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
       <GlobalStyle />
       <Component {...pageProps} />
-    </>
+    </ProductsProvider>
   )
 }
 

@@ -1,14 +1,14 @@
 import { productsMock } from './Mocks'
 
-const getAllProducts = (page: number, itemsPerPage: number) => {
+const getAllProducts = async (page: number, itemsPerPage: number) => {
   return [...productsMock].slice((page - 1) * itemsPerPage, page * itemsPerPage)
 }
 
-const getProductById = (id: string) => {
+const getProductById = async (id: string) => {
   return [...productsMock].find((item) => item._id === id)
 }
 
-const getLowestPriceProduct = () => {
+const getLowestPriceProduct = async () => {
   return [...productsMock].reduce((lowestPriceItem, item) =>
     item.price < lowestPriceItem?.price ? item : lowestPriceItem
   )

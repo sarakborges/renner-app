@@ -1,14 +1,13 @@
 import styled from 'styled-components'
 
+export const HomeTemplate = styled.div`
+  display: flex;
+  flex-flow: column;
+
+  min-height: 100vh;
+`
+
 export const HomeContent = styled.div`
-  min-height: calc(100vh - 46px - 95px);
+  flex: 1;
   padding: 32px 0;
-
-  .carousel {
-    overflow: hidden;
-
-    .carousel__slider-tray {
-      display: flex;
-    }
-  }
 `
